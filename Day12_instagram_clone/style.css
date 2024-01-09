@@ -12,6 +12,7 @@ body{
 .side_bar{
     width: 20%;
     height: 100vh;
+    display: flex;
 }
 .side_menu{
     padding: 30px;
@@ -27,11 +28,20 @@ body{
     .fa-regular,.fa-brands,.fa-solid{
         margin-right: 10px;
     }
+    .border_right{
+        height: 100vh;
+        border-right: 1px solid white;
+    }
 .img{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5px;
     
+}
+.img p{
+    font-size: 12px;
 }
 .img img{
     /* object-fit: contain; */
@@ -99,3 +109,40 @@ body{
 .content{
     font-size: 1vw;
 }
+.brand_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.brand_img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.brand_img text{
+    display: flex;
+    flex-direction: column;
+}
+.brand{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .post{
+    background-color: yellow;
+} */
+.post_content{
+    margin-top: 1.5rem;
+}
+.post_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 10px;
+}
+    .post_img img{
+        width: 75%;
+        height: 70vh;
+        border-radius: 10px;
+    }
