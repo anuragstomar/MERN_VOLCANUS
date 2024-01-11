@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .main_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 300px;
+        width:200px;
+        
+    }
+    .main_img img{
+        height: 300px;
+        width: 200px;
+        border-radius: 5%;
+    }
+   
+    .inside_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .inside_img img{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 2px solid yellow;
+    }
+    .section1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url(https://cdn.pixabay.com/photo/2017/06/24/02/56/art-2436545_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+   
+    .textbox{
+    
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        color: rgb(247, 239, 239);
+    }
+    .section2{
+        height: 100vh;
+        background-color: black;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: palegoldenrod;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+
+    }
+    .section3{
+        height: 100vh;
+    }
+    .navparent{
+        position: sticky;
+        top: 0;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;background-color:red;
+        padding: 20px;
+       
+    }
+   
+   </style>
+</head>
+<body>
+    <div class="navparent">
+        <div class="navbar">
+            <div class="item">home</div>
+            <div class="item">about</div>
+            <div class="item">teams</div>
+            <div class="item">contact</div>
+        </div>
+        </div>
+            <section class="section1">
+    
+    <div class="main_img">
+        <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg" alt=""> <div class="textbox"><h4>hello worl</h4></div><div class="inside_img"><img src="https://media.istockphoto.com/id/527818659/photo/cordoba-spain-at-the-roman-bridge-and-mosque-cathedral.jpg?s=1024x1024&w=is&k=20&c=By0VtIcXdlsVdkzgBG6LUY0SB-RJX4Pr08ytv1XNSbs=" alt=""></div>
+    </div>
+</section>
+<section class="section2">
+    <div class="box"></div>
+   
+        
+    </div>
+    </div>
+   
+</section>
+<div class="section3">
+    
+</div>
+    
+</body>
+</html>
