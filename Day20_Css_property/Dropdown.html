@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdwon</title>
+    <style>
+body{
+    background-color: black;
+    color: wheat;
+}
+.frontrow{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.items2{
+    display: block;
+}
+.items2 .inside_items{
+    display: none;
+}
+.items1:hover{
+    color: red;
+    
+}
+.items2:hover  {
+    color: rgb(38, 255, 0);
+    
+}
+.items2:hover .inside_items{
+    display: block;
+}
+.items3:hover{
+    color: rgb(255, 0, 251);
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="frontrow">
+            <div class="items1"><p>Home</p></div>
+            <div class="items2"><p>PRODUCT</p>
+                <div class="inside_items"><p>smartphones</p></div>
+                <div class="inside_items"><p>tablets</p></div>
+                <div class="inside_items"><p>Laptops</p></div>
+                <div class="inside_items"><p>Camera</p></div>
+            </div>
+            <div class="items3"><P>CONTACT</P></div>
+        </div>
+    </div>
+</body>
+</html>
