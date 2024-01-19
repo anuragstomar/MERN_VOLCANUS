@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_query</title>
+    <style>
+        .box_items{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        @media only screen and (max-width:768px){
+        body{
+            background-color: brown;
+        }
+        .box{
+            flex-direction: column;
+        }
+        .h1{
+            display: none;
+        }
+      }
+      @media only screen and (max-width:600px){
+        body{
+            background-color: palegoldenrod;
+        }
+        .box{
+            flex-direction: column;
+        }
+       
+      }
+     
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+        <div class="box_items"></div>
+    </div>
+    <h1>SUPERMAN</h1>
+</body>
+</html>
