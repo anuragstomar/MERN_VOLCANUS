@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    /* div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    } */
+    h1{
+        background-color: yellow;
+        color: black;
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       
+    }
+    .img img{
+        height: 100px;
+        width: 100px;
+        /* transform: translate(50px,50px); */
+        /* transform: rotate(360deg); */
+        transition: width 3s, height 3s;
+    }
+    .img img:hover{
+        /* transform: scale(1.10); */
+        height: 300px;
+        width: 300px;
+        border: 10px solid brown;
+    }
+  </style>
+</head>
+<body>
+    <!-- <div> <h1 class="animate__animated animate__bounce animate_infinite">An animated element</h1></div> -->
+    <div class="img">
+        <img src="https://cdn.pixabay.com/photo/2023/10/16/07/55/animal-8318650_1280.jpg" alt="">
+    </div>
+   
+</body>
+</html>
