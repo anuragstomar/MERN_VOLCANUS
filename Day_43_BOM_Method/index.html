@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript BOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: white ;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+
+    </div>
+
+    <div class="bom">
+        
+    </div>
+
+    <h1> visit websites.com</h1>
+    enter your domain <input type="text" class="input">
+    <input type="submit" value="open" class="btn">
+<br><br><br><br>
+    <button class="b1">setTimeout</button>
+    <button class="b2">setInterval</button>
+    <br><br>
+    <h1 class="time"></h1>
+   
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelector('.btn').addEventListener('click',()=>{
+            const inputVal = document.querySelector('.input').value
+            console.log(inputVal);
+
+            const url = `https://www.${inputVal}.com`
+            console.log("web url =",url)
+            const href = location.href;
+            // window.location.assign(url)
+            // window.alert(`are you sure to open this site? ${url}`);
+            // window.location.assign(url)
+            if (window.confirm(`are you sure want to open ${url}`)){
+                window.location.assign(url);
+            } 
+            else{
+                location.assign(href )
+            }
+
+
+        });
+        const timeOUT = setTimeout(() =>{
+            document.querySelector('.time').innerHTML = "we are learning setTimeout function right now";
+        },3000);
+        
+       
+        document.querySelector('.b1').addEventListener('click',timeOUT);
+        document.querySelector('.b2').addEventListener('click');
+       
+
+       
+        
+    </script>
+</body>
+</html>
