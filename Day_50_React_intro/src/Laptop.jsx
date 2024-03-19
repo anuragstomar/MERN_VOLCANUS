@@ -9,7 +9,17 @@ const Laptop = () => {
     price:65000,
     }
   return (
-    <div>
+    //inLine styling using react
+    <div style= {{
+      backgroundColor:"blue",
+      fontSize:"1.2rem",
+      border:"2px solid yellow",
+      padding:"20px",
+      borderRadius:"20px",
+      width:"750px",
+      margin:"auto",
+    }}>
+      
         <h1>this data is coming from laptop component</h1>
         <h1>{lap.brandName}</h1>
         <h1>{lap.price}</h1>

@@ -1,0 +1,21 @@
+.container{
+    background-color: blue;
+    border: 2px solid yellow;
+}
+.hero{
+    background-color: lavender;
+    margin: auto;
+    width: 750px;
+    color: black;
+    border-radius: 50px;
+    padding: 20px;
+}
+.Person{
+    background-color: lavender;
+    margin: auto;
+    width: 750px;
+    color: black;
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 20px;
+}
